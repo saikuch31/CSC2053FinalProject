@@ -31,7 +31,7 @@
             </li>
             <li>
               Select a city within the results, this will take you to the
-              current weather for your selection.
+              current weather for your selection.ed
             </li>
           </ol>
         </div>
