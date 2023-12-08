@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-col flex-1 items-center">
+  <div class=" flex flex-col flex-1 items-center">
     <div class="flex flex-col items-center text-white py-12">
-      <h1 class="text-4xl mb-2">{{ route.params.city }}</h1>
+      <h1 class="font-bold text-6xl mb-2">{{ route.params.city }}</h1>
       <p class="text-sm mb-12">
         {{
           new Date(weatherData.currentTime).toLocaleDateString("en-us", {
@@ -16,12 +16,12 @@
           })
         }}
       </p>
-      <p class="text-8xl mb-8">
+      <p class="text-6xl mb-8">
         {{ Math.round(weatherData.current.temp) }}&deg;
       </p>
-      <p>
+      <p class="font-semibold">
         Feels like
-        {{ Math.round(weatherData.current.feels_like) }} &deg;
+        {{ Math.round(weatherData.current.feels_like) }}&deg;
       </p>
       <p class="capitalize">
         {{ weatherData.current.weather[0].description }}

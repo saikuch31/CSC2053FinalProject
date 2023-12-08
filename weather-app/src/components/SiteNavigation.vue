@@ -1,12 +1,12 @@
 <template>
-  <header class="sticky top-0 bg-weather-primary shadow-lg">
+  <header class="sticky top-0 bg-indigo-900 shadow-lg">
     <nav
-      class="container flex flex-col sm:flex-row items-center gap-4 text-white py-6"
+      class="container flex flex-col sm:flex-row items-center gap-4 text-black py-6"
     >
       <RouterLink :to="{ name: 'home' }">
-        <div class="flex items-center gap-3">
-          <i class="fa-solid fa-sun text-2xl"></i>
-          <p class="text-2xl">Weather App</p>
+        <div class="hover:text-white flex items-center gap-3">
+          <i class=" motion-reduce:hidden animate-bounce h-6 w-6 mr-10 fa-solid fa-cloud text-2xl"></i>
+          <p class=" text-2xl">Weather App</p>
         </div>
       </RouterLink>
 
@@ -21,7 +21,7 @@
         <div class="text-black">
           <h1 class="text-2xl mb-1">About:</h1>
           <p class="mb-4">
-            The Local Weather allows you to track the current and future weather
+            The Weather App allows you to track the current and future weather
             of cities of your choosing.
           </p>
           <h2 class="text-2xl">How it works:</h2>
@@ -31,7 +31,7 @@
             </li>
             <li>
               Select a city within the results, this will take you to the
-              current weather for your selection.ed
+              current weather for your selection.
             </li>
           </ol>
         </div>
@@ -43,7 +43,7 @@
 <script setup>
 import { RouterLink, useRoute, useRouter } from "vue-router";
 import { ref } from "vue";
-import BaseModal from "./BaseModal.vue";
+import BaseModal from "../BaseModal.vue";
 
 const route = useRoute();
 const router = useRouter();
