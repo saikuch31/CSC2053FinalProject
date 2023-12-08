@@ -5,8 +5,10 @@
     >
       <RouterLink :to="{ name: 'home' }">
         <div class="hover:text-white flex items-center gap-3">
-          <i class=" motion-reduce:hidden animate-bounce h-6 w-6 mr-10 fa-solid fa-cloud text-2xl"></i>
-          <p class=" text-2xl">Weather App</p>
+          <i
+            class="motion-reduce:hidden animate-bounce h-6 w-6 mr-10 fa-solid fa-cloud text-2xl"
+          ></i>
+          <p class="text-2xl">Weather App</p>
         </div>
       </RouterLink>
 
@@ -43,7 +45,7 @@
 <script setup>
 import { RouterLink, useRoute, useRouter } from "vue-router";
 import { ref } from "vue";
-import BaseModal from "../BaseModal.vue";
+import BaseModal from "./BaseModal.vue";
 
 const route = useRoute();
 const router = useRouter();
